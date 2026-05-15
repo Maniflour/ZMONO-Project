@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZMONO WEAR</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div id="intro-screen">
+        <div class="intro-logo">ZMONO</div>
+        <div class="intro-sub">WEAR</div>
+        <div class="intro-line"></div>
+    </div>
+
+    <header>
+        <nav class="nav">
+            <div class="nav-indicator"></div>
+            <button class="hamburger" id="hamburger" aria-label="เปิดเมนู">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero">Home</a>
+                <a href="#product-section">Product Showcase</a>
+                <a href="#about-section">About</a>
+                <a href="#contact-section">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-img">
+            <img src="ProductHL1.png" class="product-hl">
+            <img src="ProductHL2.png" class="product-hl">
+        </div>
+        <h1 class="hero-title">ZMONO<br>WEAR</h1>
+        <p class="hero-subtitle">Wear Your Confidence</p>
+        <button class="btn-primary" onclick="location.href='#product-section'">
+            View Now
+        </button>
+    </section>
+
+
+    <section id="product-section" class="product-section reveal">
+        <h2 class="section-title">Products</h2>
+        <div class="product-controls">
+            <button class="ctrl-btn" onclick="scrollPrev()">❮</button>
+            <button class="ctrl-btn" onclick="scrollNext()">❯</button>
+        </div>
+        <div class="product-window">
+            <div class="product-track">
+                <div class="product-card"><img src="shirt1.png" class="img-style">
+                    <h4 class="product-name">ZMONO T-Shirt</h4>
+                    <h5 class="product-p-name">The OG</h5>
+                    <p class="product-price">390฿</p>
+                </div>
+                <div class="product-card"><img src="shirt2.png" class="img-style">
+                    <h4 class="product-name">ZMONO T-Shirt</h4>
+                    <h5 class="product-p-name">Concrete Grey</h5>
+                    <p class="product-price">390฿</p>
+                </div>
+                <div class="product-card"><img src="shirt3.png" class="img-style">
+                    <h4 class="product-name">ZMONO T-Shirt</h4>
+                    <h5 class="product-p-name">Sunset Glow</h5>
+                    <p class="product-price">390฿</p>
+                </div>
+                <div class="product-card"><img src="shirt4.png" class="img-style">
+                    <h4 class="product-name">ZMONO T-Shirt</h4>
+                    <h5 class="product-p-name">Candy Pop</h5>
+                    <p class="product-price">390฿</p>
+                </div>
+                <div class="product-card"><img src="shirt5.png" class="img-style">
+                    <h4 class="product-name">ZMONO T-Shirt</h4>
+                    <h5 class="product-p-name">Cyber Neon</h5>
+                    <p class="product-price">390฿</p>
+                </div>
+                <div class="product-card"><img src="shirt6.png" class="img-style">
+                    <h4 class="product-name">ZMONO T-Shirt</h4>
+                    <h5 class="product-p-name">Acid Lime</h5>
+                    <p class="product-price">390฿</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about-section" class="about-section reveal">
+        <h2 class="about-title">About Us</h2>
+        <p class="about-text">
+            ZMONO WEAR is a minimal streetwear brand focused on clean design and everyday comfort.
+            <br>We believe in simple style that speaks confidence.
+        </p>
+    </section>
+
+
+    <section id="contact-section" class="contact-section reveal">
+        <h2 class="contact-title">Contact</h2>
+        <div class="contact-box">
+            <a class="link" href="tel:0854691141" target="_blank">
+                <i class="fa-solid fa-phone"></i> Phone
+            </a>
+            <a class="link" href="https://line.me" target="_blank">
+                <i class="fa-brands fa-line"></i> LINE
+            </a>
+            <a class="link" href="mailto:test@email.com">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Deverlop by OCTODEV</p>
+    </footer>
+
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
